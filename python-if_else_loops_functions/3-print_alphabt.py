@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print("{}".format("".join([chr(i) for i in range(ord('a'), ord('z') + 1) if chr(i) not in ['q', 'e']])), end="")
+for i in range(26):
+    if chr(ord('a') + i) not in ['q', 'e']:
+        print("{}".format(chr(ord('a') + i)), end="")
