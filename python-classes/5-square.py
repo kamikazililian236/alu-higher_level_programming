@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a class Square with getter/setter properties and a my_print method.
+This module defines a Square class with a my_print method.
 """
 
 

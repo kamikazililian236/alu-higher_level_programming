@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a class Square with getter and setter properties for size.
+This module defines a Square class with getter and setter.
 """
 
 

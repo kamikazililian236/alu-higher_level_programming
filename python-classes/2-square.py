@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a class Square with optional size and type/value validation.
+This module defines a Square class with size validation.
 """
 
 
