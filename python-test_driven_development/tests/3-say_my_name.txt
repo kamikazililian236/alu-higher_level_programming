@@ -1,0 +1,43 @@
+==============================
+How to Use 3-say_my_name
+==============================
+
+Import the function:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test normal name printing:
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+    >>> say_my_name("Walter", "White")
+    My name is Walter White
+
+Test default last name argument:
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+Test empty first name:
+    >>> say_my_name("", "Smith")
+    My name is  Smith
+
+Test exception for invalid first_name type:
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Test exception for invalid last_name type:
+    >>> say_my_name("Walter", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+Test exception for None arguments:
+    >>> say_my_name(None, "White")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Walter", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string

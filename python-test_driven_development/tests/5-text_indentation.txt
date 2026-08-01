@@ -1,0 +1,39 @@
+==============================
+How to Use 5-text_indentation
+==============================
+
+Import the function:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test normal text indentation with all delimiters:
+    >>> text_indentation("Hello. World? Hello: World")
+    Hello.
+    <BLANKLINE>
+    World?
+    <BLANKLINE>
+    Hello:
+    <BLANKLINE>
+    World
+
+Test that leading spaces of the whole string are stripped:
+    >>> text_indentation("   Leading space. Test")
+    Leading space.
+    <BLANKLINE>
+    Test
+
+Test that multiple spaces after delimiters are stripped:
+    >>> text_indentation("Sentence 1.      Sentence 2")
+    Sentence 1.
+    <BLANKLINE>
+    Sentence 2
+
+Test TypeError for non-string inputs:
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string

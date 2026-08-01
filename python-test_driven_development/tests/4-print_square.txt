@@ -1,0 +1,46 @@
+==============================
+How to Use 4-print_square
+==============================
+
+Import the function:
+    >>> print_square = __import__('4-print_square').print_square
+
+Test normal square printing:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+    >>> print_square(1)
+    #
+
+Test square printing of size 0:
+    >>> print_square(0)
+
+Test TypeError for non-integer sizes:
+    >>> print_square("not an int")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square(3.5)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Test ValueError for negative integer size:
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Test TypeError for negative float size (as specified in constraints):
+    >>> print_square(-3.5)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Test boolean inputs:
+    >>> print_square(True)
+    #
